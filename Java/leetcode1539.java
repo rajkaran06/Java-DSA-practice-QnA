@@ -38,6 +38,7 @@ public class leetcode1539 {
         
 
         // Output answer
+         System.out.println("The missing element is:");
         System.out.println(findKthPositive(arr, k));
 
         sc.close();
