@@ -25,6 +25,8 @@ class Solution {
         }
         if(i>=0 && j>=0 && s.charAt(i)!=t.charAt(j)) return false;
         else if((i>0)!=(j>0)) return false;
+        i--;
+        j--;
         return true;
     }
 }
