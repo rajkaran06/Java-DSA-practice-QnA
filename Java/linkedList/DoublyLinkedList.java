@@ -12,7 +12,7 @@ class DLL{
   ListNode tail;
   int size;
   void insertAtHead(int val){
-    ListNode temp = new ListNode(val){
+   
       ListNode temp = new ListNode(val);
       if(head==null) head = tail = temp;
     else{
