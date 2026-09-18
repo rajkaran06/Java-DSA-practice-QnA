@@ -38,3 +38,21 @@ class Solution {
         dfs(root.right,arr);
     }
 }
+
+
+/*// approach -2 using recurrsion
+// binary tree 02 timespan - 2:27:25
+class Solution {
+    public void flatten(TreeNode root) {
+        if(root==null) return ;
+        TreeNode lst = root.left;
+        TreeNode rst = root.right;
+        root.left = null;
+        flatten(lst);
+        flatten(rst);
+        root.right = lst;
+        TreeNode last = root;
+        while(last.right!=null) last = last.right;
+        last.right = rst;
+    }
+}*/
