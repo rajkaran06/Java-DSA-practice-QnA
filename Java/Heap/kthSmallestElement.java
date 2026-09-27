@@ -1,0 +1,13 @@
+import java.util.*;
+class Solution {
+    public int kthSmallest(int[] arr, int k) {
+        // Code here
+        // maxheap
+       PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+       for(int ele : arr){
+           pq.add(ele);
+           if(pq.size()>k) pq.remove();
+       }
+       return pq.peek();
+    }
+}
