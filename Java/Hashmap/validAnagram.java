@@ -11,7 +11,6 @@ class Solution {
             char ch = t.charAt(i);
             if(!map.containsKey(ch)) return false;
             int freq = map.get(ch);
-            if(freq==0) map.get(ch);
             if(freq==0) return false;
             map.put(ch,freq-1);
          }
