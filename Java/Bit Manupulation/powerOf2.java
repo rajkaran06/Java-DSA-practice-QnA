@@ -6,3 +6,12 @@ class Solution {
         return false;
     }
 }
+//solution -2
+
+/*
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        return ((n & (n-1))==0);
+    }
+}
+*/
